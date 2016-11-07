@@ -1,0 +1,103 @@
+// style.scss
+
+@import 'defaults';
+
+.arrangement {
+  display: flex;
+
+  .column {
+    flex-direction: column;
+    width: 50%;
+
+    .sub-container {
+      display: flex;
+      flex-direction: row;
+
+      .container {
+        height: 14rem;
+
+        &.urls {
+          .content {
+            top: 3rem;
+          }
+        }
+
+        .content {
+          top: 4rem;
+
+        }
+      }
+    }
+
+    .container {
+      position: relative;
+      color: $white;
+      width: 10rem;
+      height: 10rem;
+      text-align: center;
+
+      &:hover {
+        opacity: .4;
+        color: #000000;
+      }
+
+      &.names {
+        background: $gray-light;
+        width: 100%;
+        color: $secondary-light;
+        font-size: 2rem;
+
+        .content {
+          top: -.5rem;
+        }
+      }
+
+      &.skills {
+        background: $secondary-light;
+        width: 50%;
+        color: $white;
+      }
+
+      &.urls {
+        background: $secondary;
+        width: 50%;
+        color: $white;
+      }
+
+      &.history {
+        background: $main;
+      }
+
+      &.about-me {
+        background: $secondary;
+      }
+
+      &.work {
+        background: $secondary-light;
+      }
+
+      &.projects {
+        background: $main-light;
+      }
+
+      &.focus {
+        background: $gray-dark;
+        color: $white;
+      }
+
+      .content {
+        position: absolute;
+        top: 2.5rem;
+        width: 100%;
+      }
+    }
+
+    &.left {
+      flex: 1;
+    }
+
+    &.right {
+      flex: 1;
+    }
+  }
+}
