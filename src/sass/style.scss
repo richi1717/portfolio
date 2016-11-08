@@ -16,14 +16,9 @@
       .container {
         height: 14rem;
 
-        &.urls {
-          .content {
-            top: 3rem;
-          }
-        }
-
         .content {
-          top: 4rem;
+          top: 7rem;
+          transform: translateY(-50%);
 
         }
       }
@@ -46,10 +41,6 @@
         width: 100%;
         color: $secondary-light;
         font-size: 2rem;
-
-        .content {
-          top: -.5rem;
-        }
       }
 
       &.skills {
@@ -87,7 +78,8 @@
 
       .content {
         position: absolute;
-        top: 2.5rem;
+        top: 5rem;
+        transform: translateY(-50%);
         width: 100%;
       }
     }
@@ -119,13 +111,7 @@
     padding-bottom: 10px;
   }
 
-  .history {
-    h1 {
-      color: $main-light;
-    }
-  }
-
-  .about-me {
+  .history, .about-me, .skills {
     h1 {
       color: $main-light;
     }
