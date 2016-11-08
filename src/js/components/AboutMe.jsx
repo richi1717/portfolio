@@ -1,48 +1,46 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { setSelectedCard, setOverlayContent } from '../actions/index';
 import classnames from 'classnames';
 
-export default class AboutMe extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      focus: false
-    };
-  }
-
+class AboutMe extends Component {
   showContent() {
     return (
-      <p>
-        Hi, my name is Richi Jeffery.  I am a web developer.
-        I started my career out at Rockit Bootcamp.  I learned
-        front end web development there and graduated first in
-        my class.  I later went on to work for CSAA AAA Insurance
-        where I picked up a lot more skills.  When I left Rockit,
-        I had a basic understanding about Javascript, HTML, CSS,
-        and Backbone.js.  Since working for CSAA, I have expanded
-        my skillset to both ends of the spectrum.  I now know Java,
-        Clojure, Node.js, some Spring, and Ruby.  On the front end
-        of the spectrum I've increased my vanilla Javascript skills and have
-        also learned React, testing with mocha, chai, and jasmine
-        on the server side.  I've also written projects from scratch and
-        handled maintenance on legacy code.  I liked developing when
-        I first started, but can now say I love it.  The more I code,
-        the better I get, and the happier I am with my career choice.
-      </p>
+      <div className="about-me">
+        <h1>About Me</h1>
+        <p>
+          My name is Richi Jeffery.  I am a web developer.  I
+          have a wife and 3 kids who I love more than anything
+          in this world.  I have been playing video games my whole
+          life and my favorites include Zelda, Mario, Metroid, Destiny,
+          Final Fantasy, Resident Evil, and so many more.  If I'm
+          not spending time with my family, coding, or playing video
+          games, I'm usually playing board games, playing the guitar,
+          piano, or bass, or trying to learn a new instrument.
+          My collection of video games, posters, books, and figures rivals
+          that of GameStop and Best Buy.  My wife has even said she feels
+          like she lives in a Best Buy sometimes.  She of course is joking.
+          I have a sense of humor which most people enjoy and I get along
+          with everyone.  I don't like to watch sports but I do enjoy playing
+          basketball, soccer, and throwing footballs or baseballs around.
+        </p>
+      </div>
     );
   }
 
   handleClick() {
-    this.setState({ focus: !this.state.focus });
+    const CARD = this.props.selected === 'aboutMe' ? null : 'aboutMe';
+
+    CARD ? this.props.setOverlayContent(this.showContent()) : null;
+    this.props.setSelectedCard(CARD);
   }
 
   render() {
     const aboutMeClasses = {
       'about-me': true,
       'container': true,
-      'focus': this.state.focus
+      'focus': this.props.selected === 'aboutMe'
     };
 
     return (
@@ -57,13 +55,15 @@ export default class AboutMe extends Component {
     )
   }
 }
-//
-// function mapStateToProps(state) {
-//
-// }
-//
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({ setMenuAttackSelected }, dispatch);
-// }
-//
-// export default connect(mapStateToProps, mapDispatchToProps)(BattleMenuAttack);
+
+function mapStateToProps(state) {
+  return {
+    selected: state.selected.selected
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ setSelectedCard, setOverlayContent }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AboutMe);

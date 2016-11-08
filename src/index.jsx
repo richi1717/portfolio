@@ -6,8 +6,10 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import ReduxPromise from 'redux-promise';
 
 import App from './js/components/App';
+import reducers from './js/reducers';
 
 export const store = createStore(
+  reducers,
   compose(
     applyMiddleware(ReduxPromise),
     window.devToolsExtension ? window.devToolsExtension() : f => f
