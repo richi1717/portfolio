@@ -4,6 +4,11 @@
 
 .arrangement {
   display: flex;
+  height: 100vh;
+  flex-direction: column;
+  @media (min-width: $breakpoints-phone) {
+    flex-direction: row;
+  }
 
   .column {
     flex-direction: column;
@@ -16,7 +21,7 @@
 
 
       .container {
-        height: 100%;
+        // height: 100%;
 
         &:hover {
           opacity: .4;
@@ -32,15 +37,20 @@
       .sub-column {
         flex-direction: column;
         flex: 1;
+        display: flex;
       }
     }
 
     .container {
-      position: relative;
+      // position: relative;
       color: $white;
       // width: 10rem;
-      height: 10rem;
+      // height: 10rem;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
 
       a {
         color: inherit;
@@ -49,29 +59,25 @@
 
       &.names {
         background: $gray;
-        width: 100%;
         color: $secondary-light;
         font-size: 2rem;
-        flex: 1;
+        // flex: 1;
       }
 
       &.resume {
         background: $gray;
-        width: 100%;
-        flex: 1;
+        // flex: 1;
         color: $secondary-light;
         font-size: 2rem;
       }
 
       &.skills {
         background: $secondary-light;
-        width: 50%;
         color: $white;
       }
 
       &.urls {
         background: $secondary;
-        width: 50%;
         color: $white;
       }
 
@@ -101,10 +107,7 @@
       }
 
       .content {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
+        // max-width: 50%;
       }
     }
 
@@ -131,7 +134,7 @@
     border-bottom: solid 4px $secondary;
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+    // width: 50%;
     padding-bottom: 10px;
   }
 
