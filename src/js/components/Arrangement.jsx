@@ -6,6 +6,8 @@ import Urls from './Urls';
 import History from './History';
 import Work from './Work';
 import Projects from './Projects';
+import Resume from './Resume';
+import Github from './Github';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setSelectedCard, setOverlayContent } from '../actions/index';
@@ -23,17 +25,23 @@ class Arrangement extends Component {
       return (
         <div className="arrangement">
           <div className="column left">
-          <Name />
-          <div className="sub-container">
-            <Skills />
-            <Urls />
+            <Name />
+            <div className="sub-container">
+              <Skills />
+              <Urls />
+            </div>
+            <Resume />
           </div>
-          </div>
-          <div className="column right">
-            <AboutMe />
-            <History />
-            <Work />
-            <Projects />
+          <div className="column right col-right">
+            <div className="sub-column left">
+              <AboutMe />
+              <History />
+              <Work />
+              <Projects />
+            </div>
+            <div className="sub-column right">
+              <Github />
+            </div>
           </div>
         </div>
       );

@@ -7,38 +7,58 @@
 
   .column {
     flex-direction: column;
-    width: 50%;
+    display: flex;
 
     .sub-container {
       display: flex;
       flex-direction: row;
+      flex: 2;
+
 
       .container {
-        height: 14rem;
+        height: 100%;
 
-        .content {
-          top: 7rem;
-          transform: translateY(-50%);
-
+        &:hover {
+          opacity: .4;
+          color: #000000;
         }
+      }
+    }
+
+    &.col-right {
+      display: flex;
+      flex-direction: row;
+
+      .sub-column {
+        flex-direction: column;
+        flex: 1;
       }
     }
 
     .container {
       position: relative;
       color: $white;
-      width: 10rem;
+      // width: 10rem;
       height: 10rem;
       text-align: center;
 
-      &:hover {
-        opacity: .4;
-        color: #000000;
+      a {
+        color: inherit;
+        text-decoration: inherit;
       }
 
       &.names {
-        background: $gray-light;
+        background: $gray;
         width: 100%;
+        color: $secondary-light;
+        font-size: 2rem;
+        flex: 1;
+      }
+
+      &.resume {
+        background: $gray;
+        width: 100%;
+        flex: 1;
         color: $secondary-light;
         font-size: 2rem;
       }
@@ -71,14 +91,18 @@
         background: $main-light;
       }
 
-      &.focus {
-        background: $gray-dark;
-        color: $white;
+      &.github {
+        background: $main-light;
+      }
+
+      &:hover {
+        opacity: .4;
+        color: #333333;
       }
 
       .content {
         position: absolute;
-        top: 5rem;
+        top: 50%;
         transform: translateY(-50%);
         width: 100%;
       }
