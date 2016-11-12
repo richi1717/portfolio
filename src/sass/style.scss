@@ -5,10 +5,13 @@
 .arrangement {
   display: flex;
   height: 100vh;
-  flex-direction: column;
-  @media screen and (min-width: $breakpoints-phone) {
-    flex-direction: row;
+  flex-direction: row;
+  @media handheld, screen and (max-width : 640px) {
+    flex-direction: column;
   }
+  // @media screen and (min-width: $breakpoints-phone and up) {
+  //   flex-direction: row;
+  // }
 
   .column {
     flex-direction: column;

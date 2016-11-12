@@ -22,7 +22,6 @@ class ContentPage extends Component {
   }
 
   render() {
-    console.log('hello?');
     return (
       <div
         className="overlay-container"
