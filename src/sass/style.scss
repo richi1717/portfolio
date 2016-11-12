@@ -6,7 +6,7 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
-  @media screen and (max-width: $breakpoints-phone) {
+  @media screen and (min-width: $breakpoints-phone) {
     flex-direction: row;
   }
 
