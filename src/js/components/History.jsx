@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setSelectedCard, setOverlayContent } from '../actions/index';
@@ -21,6 +21,7 @@ class History extends Component {
 
     CARD ? this.props.setOverlayContent(this.showContent()) : null;
     this.props.setSelectedCard(CARD);
+    this.context.router.push('/content');
   }
 
   render() {
@@ -41,6 +42,10 @@ class History extends Component {
       </div>
     )
   }
+}
+
+History.contextTypes = {
+  router: React.PropTypes.object
 }
 
 function mapStateToProps(state) {

@@ -21,8 +21,6 @@
 
 
       .container {
-        // height: 100%;
-
         &:hover {
           opacity: .4;
           color: #000000;
@@ -42,10 +40,7 @@
     }
 
     .container {
-      // position: relative;
       color: $white;
-      // width: 10rem;
-      // height: 10rem;
       text-align: center;
       display: flex;
       align-items: center;
@@ -61,12 +56,10 @@
         background: $gray;
         color: $secondary-light;
         font-size: 2rem;
-        // flex: 1;
       }
 
       &.resume {
         background: $gray;
-        // flex: 1;
         color: $secondary-light;
         font-size: 2rem;
       }
@@ -94,7 +87,7 @@
       }
 
       &.projects {
-        background: $main-light;
+        background: $main;
       }
 
       &.github {
@@ -104,10 +97,6 @@
       &:hover {
         opacity: .4;
         color: #333333;
-      }
-
-      .content {
-        // max-width: 50%;
       }
     }
 
@@ -134,7 +123,6 @@
     border-bottom: solid 4px $secondary;
     text-align: center;
     margin: 0 auto;
-    // width: 50%;
     padding-bottom: 10px;
   }
 

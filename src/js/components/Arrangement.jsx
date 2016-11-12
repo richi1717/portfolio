@@ -15,46 +15,30 @@ import { setSelectedCard, setOverlayContent } from '../actions/index';
 import '../../sass/style.scss';
 
 class Arrangement extends Component {
-  handleClick() {
-    this.props.setSelectedCard(null);
-    this.props.setOverlayContent(null);
-  }
-
   render() {
-    if (!this.props.selected) {
-      return (
-        <div className="arrangement">
-          <div className="column left">
-            <Name />
-            <div className="sub-container">
-              <Skills />
-              <Urls />
-            </div>
-            <Resume />
+    return (
+      <div className="arrangement">
+        <div className="column left">
+          <Name />
+          <div className="sub-container">
+            <Skills />
+            <Urls />
           </div>
-          <div className="column right col-right">
-            <div className="sub-column left">
-              <AboutMe />
-              <History />
-              <Work />
-              <Projects />
-            </div>
-            <div className="sub-column right">
-              <Github />
-            </div>
+          <Resume />
+        </div>
+        <div className="column right col-right">
+          <div className="sub-column left">
+            <AboutMe />
+            <History />
+            <Work />
+            <Projects />
+          </div>
+          <div className="sub-column right">
+            <Github />
           </div>
         </div>
-      );
-    } else {
-      return (
-        <div
-          className="overlay-container"
-          onClick={() => { this.handleClick(); }}
-        >
-          {this.props.overlay}
-        </div>
-      );
-    }
+      </div>
+    );
   }
 }
 
