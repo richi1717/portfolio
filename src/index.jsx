@@ -20,6 +20,9 @@ export const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router history={browserHistory}>
+      <Route path="/" component={App} />
+      <Route path="/content" component={ContentPage}/>
+    </Router>
   </Provider>
   , document.getElementById('container'));
