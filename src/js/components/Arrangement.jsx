@@ -21,9 +21,11 @@ class Arrangement extends Component {
     const elem = ReactDOM.findDOMNode(this);
 
     elem.style.opacity = 0;
+    elem.style.height = 0;
     window.requestAnimationFrame(function() {
       elem.style.transition = "all 2500ms";
       elem.style.opacity = 1;
+      elem.style.height = "100vh";
     });
   }
 

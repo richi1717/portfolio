@@ -22,7 +22,6 @@
       flex-direction: row;
       flex: 2;
 
-
       .container {
         &:hover {
           opacity: .4;
@@ -69,7 +68,7 @@
       }
 
       &.references {
-        background: $secondary-light;
+        background: $secondary-super-light;
         color: $white;
       }
 
@@ -91,11 +90,11 @@
       }
 
       &.projects {
-        background: $main;
+        background: $main-light;
       }
 
       &.github {
-        background: $main-light;
+        background: $main-super-light;
       }
 
       &:hover {
@@ -128,11 +127,15 @@
     text-align: center;
     margin: 0 auto;
     padding-bottom: 10px;
+    color: $main-light;
   }
 
-  .history, .about-me, .skills {
-    h1 {
-      color: $main-light;
+  .references {
+    a {
+      cursor: pointer;
+      &:hover {
+        color: $main-light;
+      }
     }
   }
 }

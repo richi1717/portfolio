@@ -7,8 +7,8 @@ import classnames from 'classnames';
 class Projects extends Component {
   showContent() {
     return (
-      <div className="history">
-        <h1>History</h1>
+      <div className="projects">
+        <h1>Projects</h1>
         <p>
           Fill it with Project goodness.
         </p>

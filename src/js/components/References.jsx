@@ -10,7 +10,14 @@ class References extends Component {
       <div className="references">
         <h1>References</h1>
         <ul>
-          <li>Todd Kurtz <a target="_blank" href="tel:602-334-3470">602.478.5884</a></li>
+          <li>Todd Kurtz |&nbsp;
+            <a target="_blank" href="tel:602-478-5884">602.478.5884</a> |&nbsp;
+            <a href="mailto:toddalankurtz@yahoo.com?Subject=Job%20Reference:%20Richi%20Jeffery" target="_top">toddalankurtz@yahoo.com</a>
+          </li>
+          <li>Brant Stuns |&nbsp;
+            <a target="_blank" href="tel:602-750-1386">602.750.1386</a> |&nbsp;
+            <a href="mailto:brantstuns@gmail.com?Subject=Job%20Reference:%20Richi%20Jeffery" target="_top">brantstuns@gmail.com</a>
+          </li>
         </ul>
       </div>
     );
