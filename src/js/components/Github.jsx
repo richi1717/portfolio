@@ -15,7 +15,8 @@ class Github extends Component {
     return (
       <a
         className={classnames(githubClasses)}
-        target="_blank" href="https://github.com/richi1717"
+        target="_blank"
+        href="https://github.com/richi1717"
       >
         <div>
           <div className="content">

@@ -9,6 +9,7 @@ import Work from './Work';
 import Projects from './Projects';
 import Resume from './Resume';
 import Github from './Github';
+import References from './References';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setSelectedCard, setOverlayContent } from '../actions/index';
@@ -56,6 +57,7 @@ class Arrangement extends Component {
           </div>
           <div className="sub-column right">
             <Github />
+            <References />
           </div>
         </div>
       </div>

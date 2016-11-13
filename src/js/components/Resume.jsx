@@ -15,7 +15,8 @@ class Resume extends Component {
     return (
       <a
         className={classnames(resumeClasses)}
-        target="_blank" href="/resume.pdf"
+        target="_blank"
+        href="/resume.pdf"
       >
         <div>
           <div className="content">

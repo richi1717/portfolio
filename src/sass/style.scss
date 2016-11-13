@@ -42,12 +42,6 @@
       }
     }
 
-    a {
-      color: inherit;
-      text-decoration: inherit;
-      cursor: default;
-    }
-
     .container {
       color: $white;
       text-align: center;
@@ -70,6 +64,11 @@
       }
 
       &.skills {
+        background: $secondary-light;
+        color: $white;
+      }
+
+      &.references {
         background: $secondary-light;
         color: $white;
       }
@@ -136,4 +135,10 @@
       color: $main-light;
     }
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: default;
 }
