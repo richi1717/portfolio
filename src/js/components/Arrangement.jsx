@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import AboutMe from './AboutMe';
 import Name from './Name';
 import Skills from './Skills';
@@ -15,6 +16,16 @@ import { setSelectedCard, setOverlayContent } from '../actions/index';
 import '../../sass/style.scss';
 
 class Arrangement extends Component {
+  componentWillReceiveProps() {
+    console.log('hit');
+    const elem = ReactDOM.findDOMNode(this);
+    window.requestAnimationFrame(function() {
+      elem.style.transition = 'all 1000ms';
+      elem.style.height = 0;
+      elem.style.opacity = 0;
+    });
+  }
+
   render() {
     return (
       <div className="arrangement">

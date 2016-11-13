@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import AboutMe from './AboutMe';
 import Name from './Name';
 import Skills from './Skills';
@@ -8,6 +9,7 @@ import Work from './Work';
 import Projects from './Projects';
 import Resume from './Resume';
 import Github from './Github';
+import { setPageTransitionFadeOutToHome } from '../helpers/PageTransition';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setSelectedCard, setOverlayContent } from '../actions/index';
@@ -15,17 +17,21 @@ import { setSelectedCard, setOverlayContent } from '../actions/index';
 import '../../sass/style.scss';
 
 class ContentPage extends Component {
-  handleClick() {
-    this.props.setSelectedCard(null);
-    this.props.setOverlayContent(null);
-    window.location = '/';
+  componentDidMount() {
+    const elem = ReactDOM.findDOMNode(this);
+
+    elem.style.opacity = 0;
+    window.requestAnimationFrame(function() {
+      elem.style.transition = "all 2500ms";
+      elem.style.opacity = 1;
+    });
   }
 
   render() {
     return (
       <div
         className="overlay-container"
-        onClick={() => { this.handleClick(); }}
+        onClick={() => { setPageTransitionFadeOutToHome(this); }}
       >
         {this.props.overlay}
       </div>

@@ -42,6 +42,12 @@
       }
     }
 
+    a {
+      color: inherit;
+      text-decoration: inherit;
+      cursor: default;
+    }
+
     .container {
       color: $white;
       text-align: center;
@@ -50,10 +56,6 @@
       justify-content: center;
       flex: 1;
 
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
 
       &.names {
         background: $gray;

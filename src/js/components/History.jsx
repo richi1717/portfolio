@@ -21,7 +21,7 @@ class History extends Component {
 
     CARD ? this.props.setOverlayContent(this.showContent()) : null;
     this.props.setSelectedCard(CARD);
-    this.context.router.push('/content');
+    setTimeout(() => { this.context.router.push('/content'); }, 1000);
   }
 
   render() {

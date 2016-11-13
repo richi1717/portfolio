@@ -13,11 +13,16 @@ class Resume extends Component {
     };
 
     return (
-      <div className={classnames(resumeClasses)}>
-        <a target="_blank" href="/resume.pdf"><div className="content">
-          <h1>Resume</h1>
-        </div></a>
-      </div>
+      <a
+        className={classnames(resumeClasses)}
+        target="_blank" href="/resume.pdf"
+      >
+        <div>
+          <div className="content">
+            <h1>Resume</h1>
+          </div>
+        </div>
+      </a>
     )
   }
 }

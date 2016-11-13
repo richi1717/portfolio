@@ -13,11 +13,16 @@ class Github extends Component {
     };
 
     return (
-      <div className={classnames(githubClasses)}>
-        <a target="_blank" href="https://github.com/richi1717"><div className="content">
-          <h1>Github</h1>
-        </div></a>
-      </div>
+      <a
+        className={classnames(githubClasses)}
+        target="_blank" href="https://github.com/richi1717"
+      >
+        <div>
+          <div className="content">
+            <h1>Github</h1>
+          </div>
+        </div>
+      </a>
     )
   }
 }
