@@ -17,8 +17,8 @@ import '../../sass/style.scss';
 
 class Arrangement extends Component {
   componentWillReceiveProps() {
-    console.log('hit');
     const elem = ReactDOM.findDOMNode(this);
+
     window.requestAnimationFrame(function() {
       elem.style.transition = 'all 1000ms';
       elem.style.height = 0;
