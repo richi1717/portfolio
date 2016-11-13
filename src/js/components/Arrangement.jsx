@@ -16,6 +16,16 @@ import { setSelectedCard, setOverlayContent } from '../actions/index';
 import '../../sass/style.scss';
 
 class Arrangement extends Component {
+  componentDidMount() {
+    const elem = ReactDOM.findDOMNode(this);
+
+    elem.style.opacity = 0;
+    window.requestAnimationFrame(function() {
+      elem.style.transition = "all 2500ms";
+      elem.style.opacity = 1;
+    });
+  }
+
   componentWillReceiveProps() {
     const elem = ReactDOM.findDOMNode(this);
 
