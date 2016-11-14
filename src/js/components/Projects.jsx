@@ -8,10 +8,39 @@ class Projects extends Component {
   showContent() {
     return (
       <div className="projects">
-        <h1>Projects</h1>
-        <p>
-          Fill it with Project goodness.
-        </p>
+        <h1>Projects on Github</h1>
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/richi1717/ellies-quest-rebirth">
+              Ellie's Quest Rebirth
+            </a>&nbsp;
+            React Project (Work in Progress)
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/richi1717/finances">
+              Budget Helper
+            </a>&nbsp;
+            React Project
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/richi1717/machi-koro">
+              Machi Koro
+            </a>&nbsp;
+            React Project (Work in Progress)
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/richi1717/instagram-test">
+              Instagram Test
+            </a>&nbsp;
+            Node Project
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/richi1717/ElliesQuest">
+              Original Ellies Quest
+            </a>&nbsp;
+            Backbone/Javascript/jQuery Project (first project ever, has bugs)
+          </li>
+        </ul>
       </div>
     );
   }
@@ -37,7 +66,7 @@ class Projects extends Component {
         onClick={ () => { this.handleClick(); }}
       >
         <div className="content">
-          <h1>Projects</h1>
+          <h1>Projects on Github</h1>
         </div>
       </div>
     )
