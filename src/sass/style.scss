@@ -79,8 +79,7 @@
       }
 
       &.contact {
-        background: $gray;
-        color: $secondary-light;
+        background: $main;
       }
 
       &.military {
@@ -106,7 +105,7 @@
       &:hover {
         opacity: .4;
         color: #333333;
-        flex: 1.5;
+        box-shadow: 0px 0px 10px 1px black;
       }
     }
 
