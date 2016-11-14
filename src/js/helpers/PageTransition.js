@@ -6,6 +6,7 @@ export function setPageTransitionFadeOutToHome(context) {
   window.requestAnimationFrame(function() {
     elem.style.transition = "all 500ms";
     elem.style.opacity = 0;
+    elem.style.marginLeft = '-500px';
   });
   setTimeout(() => {
     window.location = '/';
