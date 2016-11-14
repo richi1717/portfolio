@@ -7,11 +7,16 @@ import classnames from 'classnames';
 class Urls extends Component {
   showContent() {
     return (
-      <div className="history">
-        <h1>History</h1>
-        <p>
-          Fill it with URL goodness.
-        </p>
+      <div className="urls">
+      <h1>Links to Projects</h1>
+      <ul>
+        <li>
+          <a target="_blank" href="https://ellies-quest-rebirth.herokuapp.com/">
+            Ellie's Quest Rebirth
+          </a>&nbsp;
+          React (Work in Progress)
+        </li>
+      </ul>
       </div>
     );
   }
