@@ -4,20 +4,22 @@ import { bindActionCreators } from 'redux';
 import { setSelectedCard, setOverlayContent } from '../actions/index';
 import classnames from 'classnames';
 
-class History extends Component {
+class Education extends Component {
   showContent() {
     return (
-      <div className="history">
-        <h1>History</h1>
-        <p>
-          Fill it with history goodness.
-        </p>
+      <div className="education">
+        <h1>Education</h1>
+        <ul>
+          <li>Rockit Bootcamp | June 2015-Aug 2015 | Graduated First in My Class</li>
+          <li>The University of Advancing Computer Technology​ | 2009-2012 | 4.0 GPA maintained</li>
+          <li>USMC | 2006-2007 | Aviation Electronic Technician</li>
+        </ul>
       </div>
     );
   }
 
   handleClick() {
-    const CARD = this.props.selected === 'history' ? null : 'history';
+    const CARD = this.props.selected === 'education' ? null : 'education';
 
     CARD ? this.props.setOverlayContent(this.showContent()) : null;
     this.props.setSelectedCard(CARD);
@@ -25,26 +27,26 @@ class History extends Component {
   }
 
   render() {
-    const historyClasses = {
-      'history': true,
+    const educationClasses = {
+      'education': true,
       'container': true,
-      'focus': this.props.selected === 'history'
+      'focus': this.props.selected === 'education'
     };
 
     return (
       <div
-        className={classnames(historyClasses)}
+        className={classnames(educationClasses)}
         onClick={ () => { this.handleClick(); }}
       >
         <div className="content">
-          <h1>History</h1>
+          <h1>Education</h1>
         </div>
       </div>
     )
   }
 }
 
-History.contextTypes = {
+Education.contextTypes = {
   router: React.PropTypes.object
 }
 
@@ -58,4 +60,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ setSelectedCard, setOverlayContent }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(History);
+export default connect(mapStateToProps, mapDispatchToProps)(Education);

@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import AboutMe from './AboutMe';
-import Name from './Name';
-import Skills from './Skills';
-import Urls from './Urls';
-import History from './History';
-import Work from './Work';
-import Projects from './Projects';
-import Resume from './Resume';
-import Github from './Github';
 import { setPageTransitionFadeOutToHome } from '../helpers/PageTransition';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';

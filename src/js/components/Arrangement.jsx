@@ -4,8 +4,10 @@ import AboutMe from './AboutMe';
 import Name from './Name';
 import Skills from './Skills';
 import Urls from './Urls';
-import History from './History';
+import Education from './Education';
+import Military from './Military';
 import Work from './Work';
+import Contact from './Contact';
 import Projects from './Projects';
 import Resume from './Resume';
 import Github from './Github';
@@ -53,13 +55,15 @@ class Arrangement extends Component {
         <div className="column right col-right">
           <div className="sub-column left">
             <AboutMe />
-            <History />
+            <References />
             <Work />
             <Projects />
           </div>
           <div className="sub-column right">
             <Github />
-            <References />
+            <Education />
+            <Contact />
+            <Military />
           </div>
         </div>
       </div>

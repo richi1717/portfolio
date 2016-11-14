@@ -64,21 +64,27 @@
 
       &.skills {
         background: $secondary-light;
-        color: $white;
       }
 
       &.references {
-        background: $secondary-super-light;
-        color: $white;
+        background: $main;
       }
 
       &.urls {
         background: $secondary;
-        color: $white;
       }
 
-      &.history {
-        background: $main;
+      &.education {
+        background: $secondary-super-light;
+      }
+
+      &.contact {
+        background: $gray;
+        color: $secondary-light;
+      }
+
+      &.military {
+        background: $secondary;
       }
 
       &.about-me {
@@ -100,6 +106,7 @@
       &:hover {
         opacity: .4;
         color: #333333;
+        flex: 1.5;
       }
     }
 
@@ -130,7 +137,10 @@
     color: $main-light;
   }
 
-  .references, .urls, .projects {
+  .references,
+  .urls,
+  .projects,
+  .contact {
     a {
       cursor: pointer;
       &:hover {

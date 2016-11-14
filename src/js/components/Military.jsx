@@ -4,20 +4,24 @@ import { bindActionCreators } from 'redux';
 import { setSelectedCard, setOverlayContent } from '../actions/index';
 import classnames from 'classnames';
 
-class Work extends Component {
+class Military extends Component {
   showContent() {
     return (
-      <div className="work">
-        <h1>Work</h1>
-        <ul>
-          <li>CSAA AAA Insurance: 2015-current</li>
+      <div className="military">
+        <h1>Military</h1>
+        <p>USMC | Aviation Electronic Technician & Marine Air Traffic Controller</p>
+        <ul>Stationed at:
+          <li>MCRD San Diego, CA</li>
+          <li>Camp Pendleton, CA</li>
+          <li>NAS Pensacola, FL</li>
+          <li>Camp Lejeune, NC</li>
         </ul>
       </div>
     );
   }
 
   handleClick() {
-    const CARD = this.props.selected === 'work' ? null : 'work';
+    const CARD = this.props.selected === 'military' ? null : 'military';
 
     CARD ? this.props.setOverlayContent(this.showContent()) : null;
     this.props.setSelectedCard(CARD);
@@ -25,26 +29,26 @@ class Work extends Component {
   }
 
   render() {
-    const workClasses = {
-      'work': true,
+    const militaryClasses = {
+      'military': true,
       'container': true,
-      'focus': this.props.selected === 'work'
+      'focus': this.props.selected === 'military'
     };
 
     return (
       <div
-        className={classnames(workClasses)}
+        className={classnames(militaryClasses)}
         onClick={ () => { this.handleClick(); }}
       >
         <div className="content">
-          <h1>Work</h1>
+          <h1>Military</h1>
         </div>
       </div>
     )
   }
 }
 
-Work.contextTypes = {
+Military.contextTypes = {
   router: React.PropTypes.object
 }
 
@@ -58,4 +62,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ setSelectedCard, setOverlayContent }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Work);
+export default connect(mapStateToProps, mapDispatchToProps)(Military);
