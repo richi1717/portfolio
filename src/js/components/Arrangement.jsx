@@ -25,7 +25,7 @@ class Arrangement extends Component {
     elem.style.opacity = 0;
     elem.style.height = "500vh";
     window.requestAnimationFrame(function() {
-      elem.style.transition = "all 2500ms";
+      elem.style.transition = "all 1500ms";
       elem.style.opacity = 1;
       elem.style.height = "100vh";
     });
