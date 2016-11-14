@@ -130,7 +130,7 @@
     color: $main-light;
   }
 
-  .references {
+  .references, .urls, .projects {
     a {
       cursor: pointer;
       &:hover {
