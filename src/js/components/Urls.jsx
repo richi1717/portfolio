@@ -41,9 +41,13 @@ class Urls extends Component {
         className={classnames(urlsClasses)}
         onClick={ () => { this.handleClick(); }}
       >
+        <h1>Links to Projects</h1>
         <div className="content">
-          <h1>Links to Projects</h1>
+          <a target="_blank" href="https://ellies-quest-rebirth.herokuapp.com/">
+            Ellie's Quest Rebirth
+          </a>
         </div>
+        <h5>Click To See More</h5>
       </div>
     )
   }
