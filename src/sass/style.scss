@@ -46,7 +46,7 @@
     }
 
     .container {
-      color: $white;
+      color: $gray-light;
       text-align: center;
       display: flex;
       align-items: center;
@@ -106,10 +106,10 @@
         }
 
         svg {
-          fill: $white;
+          fill: $gray-light;
 
           g {
-            fill: $white;
+            fill: $gray-light;
           }
 
           &:hover {
@@ -179,7 +179,7 @@
         }
 
         a:hover {
-          color: $white;
+          color: $gray-light;
           cursor: pointer;
           text-decoration: underline;
         }
@@ -202,7 +202,7 @@
   font-size: 1.7rem;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px #9cc9e6;
-  border: solid 1px $white;
+  border: solid 1px $gray-light;
   padding: 50px;
 
   h1 {
