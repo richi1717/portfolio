@@ -9,28 +9,21 @@ class Skills extends Component {
     return (
       <div className="skills">
         <h1>Skills</h1>
-        <h2>Proficient With</h2>
-        <ul>
-          <li>React (this site is built with React BTW)</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>SCSS</li>
-          <li>CSS</li>
-          <li>Java</li>
-          <li>Clojure</li>
-        </ul>
-        <h2>Use But Not Quite Proficient Yet</h2>
-        <ul>
-          <li>Node</li>
-          <li>Express</li>
-          <li>Ruby</li>
+        <ul style={{'listStyle': 'none'}}>
+          <li className="bold-li">React (this site is built with React BTW)</li>
           <li>Backbone</li>
-          <li>SoapUi</li>
-        </ul>
-        <h2>Exposed To</h2>
-        <ul>
           <li>Angular</li>
+          <li className="bold-li">Javascript (ES5, ES6/ES2015)</li>
+          <li className="bold-li">HTML</li>
+          <li className="bold-li">SCSS</li>
+          <li className="bold-li">CSS</li>
+          <li className="bold-li">Node</li>
+          <li className="bold-li">Express</li>
           <li>TypeScript</li>
+          <li className="bold-li">Java</li>
+          <li className="bold-li">Clojure</li>
+          <li>Ruby</li>
+          <li>SoapUi</li>
           <li>Swift</li>
         </ul>
       </div>
@@ -58,9 +51,16 @@ class Skills extends Component {
         className={classnames(skillsClasses)}
         onClick={ () => { this.handleClick(); }}
       >
+        <h1>Skills</h1>
         <div className="content">
-          <h1>Skills</h1>
+          <ul>
+            <li>React</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS/SCSS</li>
+          </ul>
         </div>
+        <h5>Click To See More</h5>
       </div>
     )
   }
