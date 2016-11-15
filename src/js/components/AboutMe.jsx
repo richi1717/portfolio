@@ -40,8 +40,7 @@ class AboutMe extends Component {
   render() {
     const aboutMeClasses = {
       'about-me': true,
-      'container': true,
-      'focus': this.props.selected === 'aboutMe'
+      'container': true
     };
 
     return (

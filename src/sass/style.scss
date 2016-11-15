@@ -41,6 +41,10 @@
       }
     }
 
+    .image {
+      background-image: url('/richi-jeffery.jpg');
+    }
+
     .container {
       color: $white;
       text-align: center;
@@ -51,14 +55,21 @@
 
 
       &.names {
-        background: $gray;
-        color: $secondary-light;
+        background-image: url('/richi-jeffery.jpg');
+        opacity: .8;
+        background-size: cover;
+        flex: 2;
+        color: $secondary;
         font-size: 2rem;
+
+        &:hover {
+          color: $secondary;
+        }
       }
 
       &.resume {
         background: $gray;
-        color: $secondary-light;
+        color: $secondary;
         font-size: 2rem;
       }
 
@@ -67,23 +78,52 @@
       }
 
       &.references {
-        background: $main;
+        background: $secondary-light;
       }
 
       &.urls {
-        background: $secondary;
+        background: $main;
+        flex: 2;
       }
 
       &.education {
-        background: $secondary-super-light;
+        background: $secondary;
+        flex: 4;
       }
 
       &.contact {
-        background: $main;
+        background: $main-super-light;
+        flex: 4;
+        align-items: initial;
+        flex-direction: column;
+
+        .content {
+          display: flex;
+
+          a {
+            flex: 1;
+          }
+        }
+
+        svg {
+          fill: $white;
+
+          g {
+            fill: $white;
+          }
+
+          &:hover {
+            cursor: pointer;
+            g {
+              fill: $gray-dark;
+            }
+          }
+        }
       }
 
       &.military {
-        background: $secondary;
+        background: $secondary-super-light;
+        flex: 4;
       }
 
       &.about-me {
@@ -91,7 +131,8 @@
       }
 
       &.work {
-        background: $secondary-light;
+        background: $gray;
+        color: $secondary;
       }
 
       &.projects {
@@ -99,7 +140,28 @@
       }
 
       &.github {
-        background: $main-super-light;
+        background: $purple;
+        flex: 3;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        a {
+          flex: 1;
+
+          svg {
+            &:hover {
+              cursor: pointer;
+              height: 5rem;
+              width: 5rem;
+            }
+            @media only screen and (max-width: $breakpoints-phone) {
+              height: 3rem;
+              width: 3rem;
+            }
+          }
+        }
       }
 
       &:hover {
@@ -117,7 +179,8 @@
         }
 
         a:hover {
-          font-size: 1.5rem;
+          color: $white;
+          cursor: pointer;
           text-decoration: underline;
         }
       }

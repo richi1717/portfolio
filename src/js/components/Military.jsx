@@ -31,8 +31,7 @@ class Military extends Component {
   render() {
     const militaryClasses = {
       'military': true,
-      'container': true,
-      'focus': this.props.selected === 'military'
+      'container': true
     };
 
     return (

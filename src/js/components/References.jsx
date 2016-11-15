@@ -45,8 +45,7 @@ class References extends Component {
   render() {
     const referencesClasses = {
       'references': true,
-      'container': true,
-      'focus': this.props.selected === 'references'
+      'container': true
     };
 
     return (

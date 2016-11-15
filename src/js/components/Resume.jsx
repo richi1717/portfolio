@@ -8,8 +8,7 @@ class Resume extends Component {
   render() {
     const resumeClasses = {
       'resume': true,
-      'container': true,
-      'focus': this.props.selected === 'resume'
+      'container': true
     };
 
     return (

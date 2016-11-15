@@ -27,8 +27,7 @@ class Work extends Component {
   render() {
     const workClasses = {
       'work': true,
-      'container': true,
-      'focus': this.props.selected === 'work'
+      'container': true
     };
 
     return (

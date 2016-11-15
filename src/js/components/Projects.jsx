@@ -56,8 +56,7 @@ class Projects extends Component {
   render() {
     const projectsClasses = {
       'projects': true,
-      'container': true,
-      'focus': this.props.selected === 'projects'
+      'container': true
     };
 
     return (

@@ -42,8 +42,7 @@ class Skills extends Component {
   render() {
     const skillsClasses = {
       'skills': true,
-      'container': true,
-      'focus': this.props.selected === 'skills'
+      'container': true
     };
 
     return (

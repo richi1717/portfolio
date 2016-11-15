@@ -32,8 +32,7 @@ class Urls extends Component {
   render() {
     const urlsClasses = {
       'urls': true,
-      'container': true,
-      'focus': this.props.selected === 'urls'
+      'container': true
     };
 
     return (

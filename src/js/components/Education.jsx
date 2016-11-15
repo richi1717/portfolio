@@ -29,8 +29,7 @@ class Education extends Component {
   render() {
     const educationClasses = {
       'education': true,
-      'container': true,
-      'focus': this.props.selected === 'education'
+      'container': true
     };
 
     return (

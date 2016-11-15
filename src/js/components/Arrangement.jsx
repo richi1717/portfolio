@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import AboutMe from './AboutMe';
 import Name from './Name';
+import Picture from './Picture';
 import Skills from './Skills';
 import Urls from './Urls';
 import Education from './Education';
@@ -48,22 +49,23 @@ class Arrangement extends Component {
           <Name />
           <div className="sub-container">
             <Skills />
-            <Urls />
+            <AboutMe />
           </div>
           <Resume />
         </div>
         <div className="column right col-right">
           <div className="sub-column left">
-            <AboutMe />
-            <References />
+            <Urls />
             <Work />
             <Projects />
+            <References />
           </div>
           <div className="sub-column right">
-            <Github />
             <Education />
             <Contact />
             <Military />
+            <Github />
+
           </div>
         </div>
       </div>
