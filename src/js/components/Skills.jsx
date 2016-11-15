@@ -10,21 +10,13 @@ class Skills extends Component {
       <div className="skills">
         <h1>Skills</h1>
         <ul style={{'listStyle': 'none'}}>
-          <li className="bold-li">React (this site is built with React BTW)</li>
-          <li>Backbone</li>
-          <li>Angular</li>
-          <li className="bold-li">Javascript (ES5, ES6/ES2015)</li>
-          <li className="bold-li">HTML</li>
-          <li className="bold-li">SCSS</li>
-          <li className="bold-li">CSS</li>
-          <li className="bold-li">Node</li>
-          <li className="bold-li">Express</li>
-          <li>TypeScript</li>
-          <li className="bold-li">Java</li>
-          <li className="bold-li">Clojure</li>
-          <li>Ruby</li>
-          <li>SoapUi</li>
-          <li>Swift</li>
+          <li>React (this site is built with React BTW)</li>
+          <li>Javascript (ES5, ES6/ES2015)</li>
+          <li>HTML</li>
+          <li>SCSS</li>
+          <li>CSS</li>
+          <li>Node</li>
+          <li>Express</li>
         </ul>
       </div>
     );
