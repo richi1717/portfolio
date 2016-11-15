@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import AboutMe from './AboutMe';
 import Name from './Name';
-import Picture from './Picture';
 import Skills from './Skills';
 import Urls from './Urls';
 import Education from './Education';
@@ -65,7 +64,6 @@ class Arrangement extends Component {
             <Contact />
             <Military />
             <Github />
-
           </div>
         </div>
       </div>
