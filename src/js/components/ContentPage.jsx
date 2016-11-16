@@ -13,9 +13,9 @@ class ContentPage extends Component {
     const elem = ReactDOM.findDOMNode(this);
 
     elem.style.opacity = 0;
-    elem.style.marginLeft = '-100px';
+    elem.style.marginLeft = '-500px';
     window.requestAnimationFrame(function() {
-      elem.style.transition = "all 500ms";
+      elem.style.transition = "all 1000ms";
       elem.style.opacity = 1;
       elem.style.marginLeft = '0';
     });
