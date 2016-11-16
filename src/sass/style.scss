@@ -62,8 +62,9 @@
         color: $secondary;
         font-size: 2rem;
 
-        &:hover {
-          color: $secondary;
+        h1:hover {
+          color: $purple;
+          cursor: $cursor;
         }
       }
 
@@ -73,12 +74,14 @@
         cursor: default;
 
         h1 {
-           font-size: 2rem;
+          font-size: 2rem;
         }
 
-        h5:hover {
-          color: $purple;
-          cursor: $cursor;
+        h1, h5 {
+          &:hover {
+            color: $purple;
+            cursor: $cursor;
+          }
         }
       }
 
