@@ -46,7 +46,6 @@ class Urls extends Component {
             Ellie's Quest Rebirth
           </a>
         </div>
-        <h5>Click To See More</h5>
       </div>
     )
   }

@@ -29,7 +29,8 @@ class Education extends Component {
   render() {
     const educationClasses = {
       'education': true,
-      'container': true
+      'container': true,
+      'hover-style': true
     };
 
     return (

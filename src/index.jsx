@@ -22,7 +22,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App} />
-      <Route path="/content" component={ContentPage}/>
+      <Route path="/content" component={ContentPage} />
+      <Route path="*" component={App} />
     </Router>
   </Provider>
   , document.getElementById('container'));

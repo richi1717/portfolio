@@ -27,7 +27,8 @@ class Work extends Component {
   render() {
     const workClasses = {
       'work': true,
-      'container': true
+      'container': true,
+      'hover-style': true
     };
 
     return (

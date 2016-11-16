@@ -31,7 +31,8 @@ class Military extends Component {
   render() {
     const militaryClasses = {
       'military': true,
-      'container': true
+      'container': true,
+      'hover-style': true
     };
 
     return (

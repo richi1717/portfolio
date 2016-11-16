@@ -32,10 +32,7 @@ class Contact extends Component {
     };
 
     return (
-      <div
-        className={classnames(contactClasses)}
-        onClick={ () => { this.handleClick(); }}
-      >
+      <div className={classnames(contactClasses)}>
         <h1>Contact Me</h1>
         <div className="content">
           <a href="mailto:richi1717@gmail.com?Subject=Potential%20Job,%20Liked%20Your%20Site" target="_top">
@@ -58,6 +55,7 @@ class Contact extends Component {
             </svg>
           </a>
         </div>
+        <h5 onClick={ () => { this.handleClick(); }}>Click Here To See Info</h5>
       </div>
     )
   }

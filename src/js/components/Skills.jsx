@@ -34,7 +34,8 @@ class Skills extends Component {
   render() {
     const skillsClasses = {
       'skills': true,
-      'container': true
+      'container': true,
+      'hover-style': true
     };
 
     return (

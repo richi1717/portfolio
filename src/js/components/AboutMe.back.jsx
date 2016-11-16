@@ -19,10 +19,11 @@ class AboutMe extends Component {
           games, I'm usually playing board games, playing the guitar,
           piano, or bass, or trying to learn a new instrument.
           My collection of video games, posters, books, and figures rivals
-          that of GameStop and Best Buy. I have a sense of humor which most
-          people enjoy and I get along with everyone.  I don't like to watch
-          sports but I do enjoy playing basketball, soccer, and throwing
-          footballs or baseballs around.
+          that of GameStop and Best Buy.  My wife has even said she feels
+          like she lives in a Best Buy sometimes.  She of course is joking.
+          I have a sense of humor which most people enjoy and I get along
+          with everyone.  I don't like to watch sports but I do enjoy playing
+          basketball, soccer, and throwing footballs or baseballs around.
         </p>
       </div>
     );

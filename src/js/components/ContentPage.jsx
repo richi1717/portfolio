@@ -9,12 +9,13 @@ import '../../sass/style.scss';
 
 class ContentPage extends Component {
   componentDidMount() {
+    this.props.overlay ? null : this.context.router.push('/');
     const elem = ReactDOM.findDOMNode(this);
 
     elem.style.opacity = 0;
-    elem.style.marginLeft = '-500px';
+    elem.style.marginLeft = '-100px';
     window.requestAnimationFrame(function() {
-      elem.style.transition = "all 2500ms";
+      elem.style.transition = "all 500ms";
       elem.style.opacity = 1;
       elem.style.marginLeft = '0';
     });
@@ -32,6 +33,9 @@ class ContentPage extends Component {
   }
 }
 
+ContentPage.contextTypes = {
+  router: React.PropTypes.object
+}
 
 function mapStateToProps(state) {
   return {

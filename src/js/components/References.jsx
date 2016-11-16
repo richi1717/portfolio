@@ -45,7 +45,8 @@ class References extends Component {
   render() {
     const referencesClasses = {
       'references': true,
-      'container': true
+      'container': true,
+      'hover-style': true
     };
 
     return (

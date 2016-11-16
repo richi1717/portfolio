@@ -56,7 +56,8 @@ class Projects extends Component {
   render() {
     const projectsClasses = {
       'projects': true,
-      'container': true
+      'container': true,
+      'hover-style': true
     };
 
     return (

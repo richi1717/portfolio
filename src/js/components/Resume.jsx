@@ -8,7 +8,8 @@ class Resume extends Component {
   render() {
     const resumeClasses = {
       'resume': true,
-      'container': true
+      'container': true,
+      'hover-style': true
     };
 
     return (
@@ -20,6 +21,7 @@ class Resume extends Component {
         <div>
           <div className="content">
             <h1>Resume</h1>
+            <h5>Click to View/Print</h5>
           </div>
         </div>
       </a>

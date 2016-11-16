@@ -25,7 +25,7 @@ class Arrangement extends Component {
     elem.style.opacity = 0;
     elem.style.height = "500vh";
     window.requestAnimationFrame(function() {
-      elem.style.transition = "all 1500ms";
+      elem.style.transition = "all 750ms";
       elem.style.opacity = 1;
       elem.style.height = "100vh";
     });
@@ -35,7 +35,7 @@ class Arrangement extends Component {
     const elem = ReactDOM.findDOMNode(this);
 
     window.requestAnimationFrame(function() {
-      elem.style.transition = 'all 1000ms';
+      elem.style.transition = 'all 500ms';
       elem.style.height = 0;
       elem.style.opacity = 0;
     });
@@ -60,8 +60,8 @@ class Arrangement extends Component {
             <References />
           </div>
           <div className="sub-column right">
-            <Education />
             <Contact />
+            <Education />
             <Military />
             <Github />
           </div>
