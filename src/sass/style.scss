@@ -70,10 +70,16 @@
       &.resume {
         background: $gray;
         color: $secondary;
+        cursor: default;
 
         h1 {
            font-size: 2rem;
-         }
+        }
+
+        h5:hover {
+          color: $purple;
+          cursor: $cursor;
+        }
       }
 
       &.skills {
@@ -110,6 +116,7 @@
 
         h5:hover {
           color: $purple;
+          cursor: $cursor;
         }
 
         svg {
