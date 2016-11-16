@@ -5,30 +5,6 @@ import { setSelectedCard, setOverlayContent } from '../actions/index';
 import classnames from 'classnames';
 
 class Urls extends Component {
-  showContent() {
-    return (
-      <div className="urls">
-      <h1>Links to Projects</h1>
-      <ul>
-        <li>
-          <a target="_blank" href="https://ellies-quest-rebirth.herokuapp.com/">
-            Ellie's Quest Rebirth
-          </a>&nbsp;
-          React (Work in Progress)
-        </li>
-      </ul>
-      </div>
-    );
-  }
-
-  handleClick() {
-    const CARD = this.props.selected === 'urls' ? null : 'urls';
-
-    CARD ? this.props.setOverlayContent(this.showContent()) : null;
-    this.props.setSelectedCard(CARD);
-    setTimeout(() => { this.context.router.push('/content'); }, 1000);
-  }
-
   render() {
     const urlsClasses = {
       'urls': true,
@@ -36,10 +12,7 @@ class Urls extends Component {
     };
 
     return (
-      <div
-        className={classnames(urlsClasses)}
-        onClick={ () => { this.handleClick(); }}
-      >
+      <div className={classnames(urlsClasses)}>
         <h1>Links to Projects</h1>
         <div className="content">
           <a target="_blank" href="https://ellies-quest-rebirth.herokuapp.com/">
