@@ -116,7 +116,8 @@
           fill: $white;
 
           &:hover {
-            cursor: pointer;
+            cursor: $cursor;
+            // cursor: pointer;
             fill: $purple;
           }
         }
@@ -153,7 +154,7 @@
 
           svg {
             &:hover {
-              cursor: pointer;
+              cursor: $cursor;
               height: 5rem;
               width: 5rem;
             }
@@ -188,7 +189,7 @@
 
         a:hover {
           color: $purple;
-          cursor: pointer;
+          cursor: $cursor;
         }
       }
     }
@@ -229,7 +230,7 @@
   .projects,
   .contact {
     a {
-      cursor: pointer;
+      cursor: $cursor;
       &:hover {
         color: $main-light;
       }
@@ -240,5 +241,5 @@
 a {
   color: inherit;
   text-decoration: inherit;
-  cursor: default;
+  cursor: $cursor;
 }
