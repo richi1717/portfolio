@@ -52,7 +52,7 @@ class Skills extends Component {
             <li>CSS/SCSS</li>
           </ul>
         </div>
-        <h5>Click To See More</h5>
+        <h5>See More Skills</h5>
       </div>
     )
   }

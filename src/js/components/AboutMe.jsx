@@ -10,19 +10,21 @@ class AboutMe extends Component {
       <div className="about-me">
         <h1>About Me</h1>
         <p>
-          My name is Richi Jeffery.  I am a web developer.  I
-          have a wife and 3 kids who I love more than anything
-          in this world.  I have been playing video games my whole
-          life and my favorites include Zelda, Mario, Metroid, Destiny,
-          Final Fantasy, Resident Evil, and so many more.  If I'm
-          not spending time with my family, coding, or playing video
-          games, I'm usually playing board games, playing the guitar,
+          My name is Richi Jeffery.  I am a web developer and I
+          love what I do!.  I have a wife and 3 kids who I love
+          more than anything in this world.  I have been playing
+          video games my whole life and my favorites include
+          Zelda, Mario, Metroid, Destiny, Final Fantasy,
+          Resident Evil, and so many more.  If I'm not spending
+          time with my family, coding, or playing video games,
+          I'm usually playing board games, playing the guitar,
           piano, or bass, or trying to learn a new instrument.
-          My collection of video games, posters, books, and figures rivals
-          that of GameStop and Best Buy. I have a sense of humor which most
-          people enjoy and I get along with everyone.  I don't like to watch
-          sports but I do enjoy playing basketball, soccer, and throwing
-          footballs or baseballs around.
+          My collection of video games, posters, books, and
+          figures rivals that of GameStop and Best Buy. I have
+          a sense of humor which most people enjoy and I get
+          along with everyone.  I don't like to watch sports
+          but I do enjoy playing basketball, soccer, and
+          throwing footballs or baseballs around.
         </p>
       </div>
     );
@@ -50,6 +52,9 @@ class AboutMe extends Component {
       >
         <div className="content">
           <h1>About Me</h1>
+          <p>I am a web developer and I <span style={{color: '#BE0000'}}>
+          &#9829;</span> what I do!</p>
+          <h5>Read More About Me</h5>
         </div>
       </div>
     )

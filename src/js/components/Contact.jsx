@@ -55,7 +55,7 @@ class Contact extends Component {
             </svg>
           </a>
         </div>
-        <h5 onClick={ () => { this.handleClick(); }}>Click Here To See Info</h5>
+        <h5 onClick={ () => { this.handleClick(); }}>See My Information</h5>
       </div>
     )
   }
