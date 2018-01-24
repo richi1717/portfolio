@@ -1,8 +1,7 @@
 {
-  "presets": ["stage-0", "es2015", "react"],
-  "env": {
-    "test": {
-      "plugins": [ "__coverage__" ]
-    }
-  }
+  "presets": [
+    ["latest", {"modules": false}],
+    "react"
+  ],
+  "plugins": ["transform-object-rest-spread"]
 }
