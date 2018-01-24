@@ -3,3 +3,4 @@ dist/bundle.js
 cf_bundle.js
 .nyc_output/
 coverage/
+.idea
