@@ -1,0 +1,42 @@
+@import 'colors';
+@import 'variables';
+
+.overlay-container {
+  background: $white;
+  color: $black;
+  font-size: $font-size;
+  border-radius: 5px;
+  padding: 50px;
+
+  h1 {
+    font-size: $font-size-large;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    color: $black;
+  }
+
+  .bold-li {
+    color: $react-blue;
+  }
+
+  .about-me {
+    .triforce-svg-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .references,
+  .urls,
+  .projects,
+  .contact {
+    a {
+      cursor: $cursor;
+
+      &:hover {
+        color: $react-blue;
+      }
+    }
+  }
+}

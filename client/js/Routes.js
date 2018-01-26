@@ -10,7 +10,7 @@ export default function Routes(props) {
 
   return (
     <BrowserRouter>
-      <App state={store} location={location} history={history}>
+      <App state={store} location={location}>
         <Switch>
           <Route
             exact

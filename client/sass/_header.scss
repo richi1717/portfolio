@@ -1,0 +1,22 @@
+@import 'colors';
+@import 'variables';
+
+.portfolio-header {
+  background-color: $black;
+  color: $react-blue;
+  display: flex;
+  height: 50px;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .portfolio-header-content {
+    align-items: center;
+    display: flex;
+    font-size: $font-size;
+    margin: 0;
+    padding: 0 50px;
+  }
+}

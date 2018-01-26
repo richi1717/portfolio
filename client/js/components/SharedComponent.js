@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import * as config from '../constants/config';
 import dispatch from '../dispatch';
 
-export default class References extends Component {
+export default class SharedComponent extends Component {
   handleClick() {
     const { history, contentType } = this.props;
 
     dispatch({
-      type: 'SET_OVERLAY_CONTENT',
-      content: config[contentType]
+      type: 'SET_CONTENT',
+      content: config[contentType].content
     });
 
     history.push('/content');

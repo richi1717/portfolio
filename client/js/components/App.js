@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
 
 import '../../sass/style.scss';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        {this.props.state.showHeader && <Header />}
-        {this.props.children}
-      </div>
-    );
-  }
+export default function App({ state, children }) {
+  return (
+    <div>
+      {state.content && <Header />}
+      {children}
+    </div>
+  );
 }

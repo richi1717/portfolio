@@ -7,9 +7,13 @@ export const defaults = {
 
 export default function rootReducer(state = defaults, action) {
   switch (action.type) {
-    case 'SET_OVERLAY_CONTENT':
+    case 'SET_CONTENT':
       return _assign({}, state, {
         content: action.content
+      });
+    case 'HIDE_CONTENT':
+      return _assign({}, state, {
+        content: ''
       });
     case 'SHOW_HEADER':
       return _assign({}, state, {
