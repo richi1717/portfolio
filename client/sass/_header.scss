@@ -10,13 +10,17 @@
   margin: 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 
   .portfolio-header-content {
     align-items: center;
     display: flex;
     font-size: $font-size;
     margin: 0;
-    padding: 0 50px;
+    padding: 0 20px;
+
+    @media screen and (min-width: $breakpoints-tablet) {
+      padding: 0 50px;
+    }
   }
 }

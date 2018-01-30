@@ -2,6 +2,8 @@
 
 @import 'colors';
 @import 'header';
+@import 'footer';
+@import 'navBar';
 @import 'content';
 @import 'variables';
 
@@ -10,6 +12,10 @@ body {
   margin: 0;
 }
 
+.portfolio-main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 .arrangement {
   display: flex;
   height: 100vh;
@@ -226,8 +232,21 @@ a {
   color: inherit;
   text-decoration: inherit;
   cursor: $cursor;
+
+  &:hover {
+    color: $react-blue;
+  }
+
+  .portfolio-svg-open-link {
+    vertical-align: -2px;
+    display: inline-block;
+    margin-left: 5px;
+    color: $react-gray;
+  }
 }
 
-ul {
-  list-style: none;
+//ul {
+//  list-style: none;
+//}
+
 }

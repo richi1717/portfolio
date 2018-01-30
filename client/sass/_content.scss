@@ -6,7 +6,13 @@
   color: $black;
   font-size: $font-size;
   border-radius: 5px;
-  padding: 50px;
+  padding: 50px 20px;
+  flex: 1;
+  margin-top: 50px;
+
+  @media screen and (min-width: $breakpoints-tablet) {
+    padding: 50px;
+  }
 
   h1 {
     font-size: $font-size-large;

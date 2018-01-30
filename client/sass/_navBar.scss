@@ -1,0 +1,73 @@
+@import 'colors';
+@import 'variables';
+
+.portfolio-nav-bar-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  //overflow-x: auto;
+  //overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  //padding-left: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-right: 50px;
+  flex: 1;
+  mask-image: -webkit-linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+  mask-image: -moz-linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+  -webkit-mask-image: -webkit-linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+  -webkit-mask-image: -moz-linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+
+  @media screen and (max-width: $breakpoints-tablet) {
+    margin-right: 20px;
+  }
+
+  .portfolio-nav-bar-items {
+    color: $white;
+    font-weight: $font-weight-normal;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    &.selected {
+      color: $react-blue;
+    }
+
+    &:hover {
+      color: $react-white;
+    }
+
+    @media screen and (max-width: $breakpoints-tablet) {
+      &:focus {
+        outline: 0;
+        background-color: $react-gray-dark;
+        color: $react-white;
+      }
+    }
+
+    @media screen and (min-width: $breakpoints-tablet) {
+      .portfolio-nav-bar-selected-border {
+        position: absolute;
+        bottom: -1px;
+        height: 4px;
+        background: #61dafb;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+    }
+  }
+}

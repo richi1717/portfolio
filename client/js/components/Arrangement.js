@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SharedComponent from './SharedComponent';
+import { openLink } from '../helpers/svgs';
 
 export default class Arrangement extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class Arrangement extends Component {
         <div className="column left">
           <SharedComponent
             history={this.props.history}
-            contentType="aboutMe"
+            contentType="about"
             tileClasses="container names focus"
           >
             <h1>Richi Jeffery</h1>
@@ -32,11 +33,11 @@ export default class Arrangement extends Component {
             </SharedComponent>
             <SharedComponent
               history={this.props.history}
-              contentType="aboutMe"
+              contentType="about"
               tileClasses="container about-me hover-style"
             >
               <div className="content">
-                <h1>About Me</h1>
+                <h1>About</h1>
                 <p>I am a web developer and I <span style={{color: '#BE0000'}}>
             &#9829;</span> what I do!</p>
                 <h5>Read More About Me</h5>
@@ -54,7 +55,7 @@ export default class Arrangement extends Component {
               <div>
                 <div className="content">
                   <h1>Resume</h1>
-                  <h5>View/Print</h5>
+                  <h5>View/Print {openLink}</h5>
                 </div>
               </div>
             </a>
@@ -64,12 +65,13 @@ export default class Arrangement extends Component {
           <div className="sub-column left">
             <SharedComponent
               history={this.props.history}
-              tileClasses="urls container"
+              tileClasses="urls container hover-style"
+              contentType="demo"
             >
-              <h1>Links to Projects</h1>
+              <h1>Demos</h1>
               <div className="content">
                 <a target="_blank" href="https://ellies-quest-rebirth.herokuapp.com/">
-                  Ellie's Quest Rebirth
+                  Ellie's Quest Rebirth {openLink}
                 </a>
               </div>
             </SharedComponent>

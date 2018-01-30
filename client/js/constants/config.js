@@ -1,30 +1,31 @@
 import React from 'react';
-import { triforce } from '../helpers/svgs';
+import { triforce, openLink } from '../helpers/svgs';
 
 export const aboutMe = {
   content: (
     <div className="about-me">
-      <h1>About Me</h1>
+      <h1>About</h1>
+      <p>My name is Richi Jeffery. I am a developer.</p>
       <p>
-        My name is Richi Jeffery. I am a developer.
+        I have a wife and 3 kids who I love more than anything in this world. I
+        have been playing video games my whole life. Some of my favorites
+        include Zelda, Mario, Metroid, Destiny, Final Fantasy, Resident Evil,
+        and so many more.
       </p>
+      <div
+        className="triforce-svg-container"
+        dangerouslySetInnerHTML={{ __html: triforce }}
+      />
       <p>
-        I have a wife and 3 kids who I love more than anything in this world.
-        I have been playing video games my whole life. Some of my favorites
-        include Zelda, Mario, Metroid, Destiny, Final Fantasy, Resident Evil, and so many more.
-      </p>
-      <div className="triforce-svg-container" dangerouslySetInnerHTML={{__html: triforce}} />
-      <p>
-        If I'm not spending time with my family, coding, or playing video games, I'm
-        usually playing board games, the guitar, piano, or bass, or trying to
-        learn a new instrument. My collection of video games, posters, books,
+        If I'm not spending time with my family, coding, or playing video games,
+        I'm usually playing board games, the guitar, piano, or bass, or trying
+        to learn a new instrument. My collection of video games, posters, books,
         and figures, rival that of GameStop and Best Buy.
       </p>
       <p>
-        I have a sense of
-        humor which most people enjoy and I get along with everyone. I don't
-        like to watch sports but I do enjoy playing basketball, soccer, and
-        throwing footballs or baseballs around.
+        I have a sense of humor which most people enjoy and I get along with
+        everyone. I don't like to watch sports but I do enjoy playing
+        basketball, soccer, and throwing footballs or baseballs around.
       </p>
     </div>
   ),
@@ -73,42 +74,48 @@ export const projects = {
         {' '}
         <li>
           {' '}
+          <a target="_blank" href="https://github.com/richi1717/portfolio">
+            {' '}
+            Portfolio (the site you're on){openLink}
+          </a>&nbsp; React Project{' '}
+        </li>{' '}
+        <li>
+          {' '}
           <a
             target="_blank"
             href="https://github.com/richi1717/ellies-quest-rebirth"
           >
             {' '}
-            Ellie's Quest Rebirth{' '}
-          </a>&nbsp; React Project (Work in Progress){' '}
+            Ellie's Quest Rebirth{openLink}
+          </a>&nbsp; React Project{' '}
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/finances">
             {' '}
-            Budget Helper{' '}
+            Budget Helper{openLink}
           </a>&nbsp; React Project{' '}
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/machi-koro">
             {' '}
-            Machi Koro{' '}
-          </a>&nbsp; React Project (Work in Progress){' '}
+            Machi Koro{openLink}
+          </a>&nbsp; React Project{' '}
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/instagram-test">
             {' '}
-            Instagram Test{' '}
-          </a>&nbsp; Node Project{' '}
+            Instagram Test{openLink}
+          </a>&nbsp; Node/Express{' '}
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/ElliesQuest">
             {' '}
-            Original Ellies Quest{' '}
-          </a>&nbsp; Backbone/Javascript/jQuery Project (first project ever, has
-          bugs){' '}
+            Original Ellies Quest{openLink}
+          </a>&nbsp; Backbone/Javascript/jQuery{' '}
         </li>{' '}
       </ul>
     </div>
@@ -193,9 +200,8 @@ export const skills = {
       <h1>Skills</h1>
       <ul style={{ listStyle: 'none' }}>
         {' '}
-        <li>React (this site is built with React BTW)</li>{' '}
-        <li>Javascript (ES5, ES6/ES2015)</li> <li>HTML</li> <li>SCSS</li>{' '}
-        <li>CSS</li> <li>Node</li> <li>Express</li>{' '}
+        <li>React</li> <li>Javascript</li>
+        <li>HTML</li> <li>SCSS</li> <li>CSS</li> <li>Node</li> <li>Express</li>{' '}
       </ul>
     </div>
   )
@@ -205,9 +211,48 @@ export const work = {
   content: (
     <div className="work">
       <h1>Work</h1>
+      <p>CSAA AAA Insurance: 2015-current</p>{' '}
       <ul>
-        {' '}
-        <li>CSAA AAA Insurance: 2015-current</li>{' '}
+        <li>
+          <a
+            target="_blank"
+            href="https://quote.digital.csaa-insurance.aaa.com/"
+          >
+            Auto Quoter
+            {openLink}
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://mypolicy.digital.csaa-insurance.aaa.com/login"
+          >
+            CSAA Login Page
+            {openLink}
+          </a>
+        </li>
+      </ul>
+    </div>
+  )
+};
+
+export const demo = {
+  content: (
+    <div className="work">
+      <h1>Demos</h1>
+      <ul>
+        <li>
+          <a target="_blank" href="https://ellies-quest-rebirth.herokuapp.com/">
+            Ellie's Quest Rebirth
+            {openLink}
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://code-flashcards.herokuapp.com/">
+            Study Flashcards
+            {openLink}
+          </a>
+        </li>
       </ul>
     </div>
   )
@@ -216,7 +261,7 @@ export const work = {
 export const contact = {
   content: (
     <div className="contact">
-      <h1>Contact Me</h1>
+      <h1>Contact</h1>
       <p>
         Richi Jeffery |&nbsp;{' '}
         <a target="_blank" href="tel:602-334-3470">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import dispatch from '../dispatch';
+import NavBar from './NavBar';
 
 export default function Header() {
   return (
@@ -10,6 +11,7 @@ export default function Header() {
           Richi Jeffery
         </Link>
       </h1>
+      <NavBar />
     </header>
   );
 }
