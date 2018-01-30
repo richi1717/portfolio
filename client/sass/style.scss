@@ -123,8 +123,11 @@ body {
         flex-direction: column;
 
         .content {
-          display: flex;
           width: 75%;
+
+          @media screen and (min-width: $breakpoints-tablet) {
+            display: flex;
+          }
 
           a {
             flex: 1;
@@ -248,5 +251,9 @@ a {
 //ul {
 //  list-style: none;
 //}
-
+  @media screen and (max-width: $breakpoints-tablet) {
+    .mobile-hide-content {
+      display: none;
+    }
+  }
 }

@@ -22,14 +22,14 @@ export default class Arrangement extends Component {
             >
               <h1>Skills</h1>
               <div className="content">
-                <ul>
+                <ul className="mobile-hide-content">
                   <li>React</li>
                   <li>Javascript</li>
                   <li>HTML</li>
                   <li>CSS/SCSS</li>
                 </ul>
               </div>
-              <h5>See More Skills</h5>
+              <h5 className="mobile-hide-content">See More Skills</h5>
             </SharedComponent>
             <SharedComponent
               history={this.props.history}
@@ -38,9 +38,9 @@ export default class Arrangement extends Component {
             >
               <div className="content">
                 <h1>About</h1>
-                <p>I am a web developer and I <span style={{color: '#BE0000'}}>
+                <p className="mobile-hide-content">I am a web developer and I <span style={{color: '#BE0000'}}>
             &#9829;</span> what I do!</p>
-                <h5>Read More About Me</h5>
+                <h5 className="mobile-hide-content">Read More About Me</h5>
               </div>
             </SharedComponent>
           </div>
@@ -104,7 +104,7 @@ export default class Arrangement extends Component {
               tileClasses="container contact"
             >
               <h1>Contact Me</h1>
-              <div className="content">
+              <div className="content mobile-hide-content">
                 <a href="mailto:richi1717@gmail.com?Subject=Potential%20Job,%20Liked%20Your%20Site" target="_top">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="2rem" height="2rem" viewBox="0 0 511.626 511.627" xmlSpace="preserve">
                     <g>
@@ -125,7 +125,7 @@ export default class Arrangement extends Component {
                   </svg>
                 </a>
               </div>
-              <h5>See My Information</h5>
+              <h5 className="mobile-hide-content">See My Information</h5>
             </SharedComponent>
             <SharedComponent
               history={this.props.history}
