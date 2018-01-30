@@ -10,6 +10,7 @@
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  flex-shrink: 0;
 
   .portfolio-footer-items {
     font-size: $font-size;
