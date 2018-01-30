@@ -16,182 +16,183 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-.arrangement {
-  display: flex;
-  height: 100vh;
-  flex-direction: row;
-  @media only screen and (max-device-width: $breakpoints-phone) {
-    flex-direction: column;
-  }
-  @media only screen and (max-width: $breakpoints-phone) {
-    flex-direction: column;
-  }
 
-  .column {
-    flex-direction: column;
+  .arrangement {
     display: flex;
-
-    .sub-container {
-      display: flex;
-      flex-direction: row;
-      flex: 2;
-
-      // .container {
-      //   &:hover {
-      //     opacity: .4;
-      //     color: #000000;
-      //   }
-      // }
+    height: 100vh;
+    flex-direction: row;
+    @media only screen and (max-device-width: $breakpoints-phone) {
+      flex-direction: column;
+    }
+    @media only screen and (max-width: $breakpoints-phone) {
+      flex-direction: column;
     }
 
-    &.col-right {
+    .column {
+      flex-direction: column;
       display: flex;
-      flex-direction: row;
 
-      .sub-column {
-        flex-direction: column;
-        flex: 1;
+      .sub-container {
         display: flex;
-      }
-    }
-
-    .image {
-      background-image: url('/richi-jeffery.jpg');
-    }
-
-    .container {
-      color: $white;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-
-
-      &.names {
-        background-image: url('/richi-jeffery.jpg');
-        opacity: .8;
-        background-size: cover;
+        flex-direction: row;
         flex: 2;
-        color: $secondary;
-        font-size: $font-size;
+
+        // .container {
+        //   &:hover {
+        //     opacity: .4;
+        //     color: #000000;
+        //   }
+        // }
       }
 
-      &.resume {
-        background: $gray;
-        color: $secondary;
-        cursor: default;
+      &.col-right {
+        display: flex;
+        flex-direction: row;
 
-        h1 {
-          font-size: $font-size;
+        .sub-column {
+          flex-direction: column;
+          flex: 1;
+          display: flex;
         }
       }
 
-      &.resume,
-      &.names,
-      &.skills,
-      &.about-me {
-        h1, h5 {
-          &:hover {
+      .image {
+        background-image: url('/richi-jeffery.jpg');
+      }
+
+      .container {
+        color: $white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+
+        &.names {
+          background-image: url('/richi-jeffery.jpg');
+          opacity: 0.8;
+          background-size: cover;
+          flex: 2;
+          color: $secondary;
+          font-size: $font-size;
+        }
+
+        &.resume {
+          background: $gray;
+          color: $secondary;
+          cursor: default;
+
+          h1 {
+            font-size: $font-size;
+          }
+        }
+
+        &.resume,
+        &.names,
+        &.skills,
+        &.about-me {
+          h1,
+          h5 {
+            &:hover {
+              color: $purple;
+              cursor: $cursor;
+            }
+          }
+        }
+
+        &.skills {
+          background: $secondary-light;
+        }
+
+        &.references {
+          background: $secondary-light;
+        }
+
+        &.urls {
+          background: $main;
+          flex: 2;
+        }
+
+        &.education {
+          background: $main-super-light;
+          flex: 4;
+        }
+
+        &.contact {
+          background: $secondary;
+          flex: 4;
+          flex-direction: column;
+
+          .content {
+            width: 75%;
+
+            @media screen and (min-width: $breakpoints-tablet) {
+              display: flex;
+            }
+
+            a {
+              flex: 1;
+            }
+          }
+
+          h5:hover {
             color: $purple;
             cursor: $cursor;
           }
-        }
-      }
 
-      &.skills {
-        background: $secondary-light;
-      }
+          svg {
+            fill: $white;
 
-      &.references {
-        background: $secondary-light;
-      }
-
-      &.urls {
-        background: $main;
-        flex: 2;
-      }
-
-      &.education {
-        background: $main-super-light;
-        flex: 4;
-      }
-
-      &.contact {
-        background: $secondary;
-        flex: 4;
-        flex-direction: column;
-
-        .content {
-          width: 75%;
-
-          @media screen and (min-width: $breakpoints-tablet) {
-            display: flex;
+            &:hover {
+              cursor: $cursor;
+              // cursor: pointer;
+              fill: $purple;
+            }
           }
+        }
+
+        &.military {
+          background: $secondary-super-light;
+          flex: 4;
+        }
+
+        &.about-me {
+          background: $secondary;
+        }
+
+        &.work {
+          background: $gray;
+          color: $secondary;
+        }
+
+        &.projects {
+          background: $main-light;
+        }
+
+        &.github {
+          background: $purple;
+          flex: 3;
+          //
+          // &:hover {
+          //   opacity: 1;
+          // }
 
           a {
             flex: 1;
-          }
-        }
 
-        h5:hover {
-          color: $purple;
-          cursor: $cursor;
-        }
-
-        svg {
-          fill: $white;
-
-          &:hover {
-            cursor: $cursor;
-            // cursor: pointer;
-            fill: $purple;
-          }
-        }
-      }
-
-      &.military {
-        background: $secondary-super-light;
-        flex: 4;
-      }
-
-      &.about-me {
-        background: $secondary;
-      }
-
-      &.work {
-        background: $gray;
-        color: $secondary;
-      }
-
-      &.projects {
-        background: $main-light;
-      }
-
-      &.github {
-        background: $purple;
-        flex: 3;
-        //
-        // &:hover {
-        //   opacity: 1;
-        // }
-
-        a {
-          flex: 1;
-
-          svg {
-            &:hover {
-              cursor: $cursor;
-              height: 5rem;
-              width: 5rem;
-            }
-            @media only screen and (max-width: $breakpoints-phone) {
-              height: 3rem;
-              width: 3rem;
+            svg {
+              &:hover {
+                cursor: $cursor;
+                height: 5rem;
+                width: 5rem;
+              }
+              @media only screen and (max-width: $breakpoints-phone) {
+                height: 3rem;
+                width: 3rem;
+              }
             }
           }
         }
-      }
 
         &.hover-style {
           &:hover {
@@ -200,57 +201,58 @@ body {
           }
         }
 
-      // &:hover {
-      //   opacity: .5;
-      //   color: $black;
-      //   box-shadow: 0px 0px 10px 3px $gray-dark;
-      // }
+        // &:hover {
+        //   opacity: .5;
+        //   color: $black;
+        //   box-shadow: 0px 0px 10px 3px $gray-dark;
+        // }
 
-      &.skills, &.urls {
-        flex-direction: column;
+        &.skills,
+        &.urls {
+          flex-direction: column;
 
-        ul {
-          list-style: none;
-          padding: 0;
-        }
+          ul {
+            list-style: none;
+            padding: 0;
+          }
 
-        a:hover {
-          color: $purple;
-          cursor: $cursor;
+          a:hover {
+            color: $purple;
+            cursor: $cursor;
+          }
         }
       }
-    }
 
-    &.left {
-      flex: 1;
-    }
+      &.left {
+        flex: 1;
+      }
 
-    &.right {
-      flex: 1;
+      &.right {
+        flex: 1;
+      }
     }
   }
-}
 
-a {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: $cursor;
+  a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: $cursor;
 
-  &:hover {
-    color: $react-blue;
+    &:hover {
+      color: $react-blue;
+    }
+
+    .portfolio-svg-open-link {
+      vertical-align: -2px;
+      display: inline-block;
+      margin-left: 5px;
+      color: $react-gray;
+    }
   }
 
-  .portfolio-svg-open-link {
-    vertical-align: -2px;
-    display: inline-block;
-    margin-left: 5px;
-    color: $react-gray;
-  }
-}
-
-//ul {
-//  list-style: none;
-//}
+  //ul {
+  //  list-style: none;
+  //}
   @media screen and (max-width: $breakpoints-tablet) {
     .mobile-hide-content {
       display: none;

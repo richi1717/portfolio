@@ -69,11 +69,6 @@ export default class Arrangement extends Component {
               contentType="demo"
             >
               <h1>Demos</h1>
-              <div className="content">
-                <a target="_blank" href="https://ellies-quest-rebirth.herokuapp.com/">
-                  Ellie's Quest Rebirth {openLink}
-                </a>
-              </div>
             </SharedComponent>
             <SharedComponent
               history={this.props.history}

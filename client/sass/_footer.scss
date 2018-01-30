@@ -8,12 +8,11 @@
   height: 50px;
   margin: 0;
   width: 100%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   .portfolio-footer-items {
     font-size: $font-size;
     margin: 0;
-    padding: 0 50px;
   }
 }
