@@ -263,11 +263,13 @@ export const contact = {
     <div className="contact">
       <h1>Contact</h1>
       <p>
-        Richi Jeffery |&nbsp;{' '}
+        Phone |&nbsp;{' '}
         <a target="_blank" href="tel:602-334-3470">
           602.334.3470
         </a>{' '}
-        |&nbsp;{' '}
+      </p>
+      <p>
+        Email |&nbsp;{' '}
         <a
           href="mailto:richi1717@gmail.com?Subject=Potential%20Job,%20Liked%20Your%20Site"
           target="_top"
