@@ -17,6 +17,12 @@ body {
   flex-direction: column;
   height: 100%;
 
+  @media only screen and (max-width: $breakpoints-tablet) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+
   .arrangement {
     display: flex;
     height: 100vh;
@@ -36,13 +42,6 @@ body {
         display: flex;
         flex-direction: row;
         flex: 2;
-
-        // .container {
-        //   &:hover {
-        //     opacity: .4;
-        //     color: #000000;
-        //   }
-        // }
       }
 
       &.col-right {
@@ -81,10 +80,6 @@ body {
           background: $gray;
           color: $secondary;
           cursor: default;
-
-          h1 {
-            font-size: $font-size;
-          }
         }
 
         &.resume,
