@@ -5,3 +5,4 @@ cf_bundle.js
 coverage/
 .idea
 public/bundle*
+public/.DS_Store
