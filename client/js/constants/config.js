@@ -211,7 +211,7 @@ export const work = {
   content: (
     <div className="work">
       <h1>Work</h1>
-      <p>CSAA AAA Insurance: 2015-current</p>{' '}
+      <p>CSAA AAA Insurance: 2015-Current</p>{' '}
       <ul>
         <li>
           <a
