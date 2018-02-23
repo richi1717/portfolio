@@ -7,7 +7,7 @@ export const aboutMe = {
       <h1>About</h1>
       <p>My name is Richi Jeffery. I am a developer.</p>
       <p>
-        I have a wife and 3 kids who I love more than anything in this world. I
+        I have a wife and three kids who I love more than anything in this world. I
         have been playing video games my whole life. Some of my favorites
         include Zelda, Mario, Metroid, Destiny, Final Fantasy, Resident Evil,
         and so many more.
@@ -77,7 +77,7 @@ export const projects = {
           <a target="_blank" href="https://github.com/richi1717/portfolio">
             {' '}
             Portfolio (the site you're on){openLink}
-          </a>&nbsp; React Project{' '}
+          </a>
         </li>{' '}
         <li>
           {' '}
@@ -87,35 +87,35 @@ export const projects = {
           >
             {' '}
             Ellie's Quest Rebirth{openLink}
-          </a>&nbsp; React Project{' '}
+          </a>
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/finances">
             {' '}
             Budget Helper{openLink}
-          </a>&nbsp; React Project{' '}
+          </a>
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/machi-koro">
             {' '}
             Machi Koro{openLink}
-          </a>&nbsp; React Project{' '}
+          </a>
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/instagram-test">
             {' '}
             Instagram Test{openLink}
-          </a>&nbsp; Node/Express{' '}
+          </a>
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/ElliesQuest">
             {' '}
             Original Ellies Quest{openLink}
-          </a>&nbsp; Backbone/Javascript/jQuery{' '}
+          </a>
         </li>{' '}
       </ul>
     </div>
