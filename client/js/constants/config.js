@@ -114,7 +114,7 @@ export const projects = {
           {' '}
           <a target="_blank" href="https://github.com/richi1717/ElliesQuest">
             {' '}
-            Original Ellies Quest{openLink}
+            Original Ellie's Quest{openLink}
           </a>
         </li>{' '}
       </ul>
