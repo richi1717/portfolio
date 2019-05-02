@@ -7,10 +7,10 @@ export const aboutMe = {
       <h1>About</h1>
       <p>My name is Richi Jeffery. I am a developer.</p>
       <p>
-        I have a wife and three kids who I love more than anything in this world. I
-        have been playing video games my whole life. Some of my favorites
-        include Zelda, Mario, Metroid, Destiny, Final Fantasy, Resident Evil,
-        and so many more.
+        I have a wife and three kids who I love more than anything in this
+        world. I have been playing video games my whole life. Some of my
+        favorites include Zelda, Mario, Metroid, Destiny, Final Fantasy,
+        Resident Evil, and so many more.
       </p>
       <div
         className="triforce-svg-container"
@@ -76,7 +76,8 @@ export const projects = {
           {' '}
           <a target="_blank" href="https://github.com/richi1717/portfolio">
             {' '}
-            Portfolio (the site you're on){openLink}
+            Portfolio (the site you're on)
+            {openLink}
           </a>
         </li>{' '}
         <li>
@@ -86,35 +87,40 @@ export const projects = {
             href="https://github.com/richi1717/ellies-quest-rebirth"
           >
             {' '}
-            Ellie's Quest Rebirth{openLink}
+            Ellie's Quest Rebirth
+            {openLink}
           </a>
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/finances">
             {' '}
-            Budget Helper{openLink}
+            Budget Helper
+            {openLink}
           </a>
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/machi-koro">
             {' '}
-            Machi Koro{openLink}
+            Machi Koro
+            {openLink}
           </a>
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/instagram-test">
             {' '}
-            Instagram Test{openLink}
+            Instagram Test
+            {openLink}
           </a>
         </li>{' '}
         <li>
           {' '}
           <a target="_blank" href="https://github.com/richi1717/ElliesQuest">
             {' '}
-            Original Ellie's Quest{openLink}
+            Original Ellie's Quest
+            {openLink}
           </a>
         </li>{' '}
       </ul>
@@ -200,8 +206,17 @@ export const skills = {
       <h1>Skills</h1>
       <ul style={{ listStyle: 'none' }}>
         {' '}
-        <li>React</li> <li>Javascript</li>
-        <li>HTML</li> <li>SCSS</li> <li>CSS</li> <li>Node</li> <li>Express</li>{' '}
+        {[
+          'React',
+          'JavaScript',
+          'Redux',
+          'MobX',
+          'HTML',
+          'SCSS',
+          'Node',
+          'Express'
+        ].map(item => <li key={item}>{item}</li>)}
+        {' '}
       </ul>
     </div>
   )
