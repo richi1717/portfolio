@@ -113,6 +113,11 @@ body {
           flex: 4;
         }
 
+        &.music {
+          background: $secondary-super-light;
+          flex: 4;
+        }
+
         &.contact {
           background: $secondary;
           flex: 4;
@@ -147,7 +152,8 @@ body {
         }
 
         &.military {
-          background: $secondary-super-light;
+          background: $gray;
+          color: $secondary;
           flex: 4;
         }
 

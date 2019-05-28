@@ -2,8 +2,8 @@
   "name": "portfolio",
   "version": "0.0.0",
   "description": "portfolio",
-  "engines" : {
-    "node" : ">=8.0.0 <9.0.0"
+  "engines": {
+    "node": ">=8.0.0 <9.0.0"
   },
   "main": "index.js",
   "scripts": {
@@ -48,5 +48,8 @@
     "webpack": "^3.3.0",
     "webpack-dev-middleware": "^1.11.0",
     "webpack-hot-middleware": "^2.18.2"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

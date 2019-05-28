@@ -1,22 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class SharedComponent extends Component {
-  handleClick() {
-    const { history, contentType } = this.props;
-
+const SharedComponent = props => {
+  const { history, tileClasses, children, contentType } = props;
+  const handleClick = () => {
     history.push(`/${contentType.toLowerCase()}`);
-  }
+  };
 
-  render() {
-    const { tileClasses, children, contentType } = this.props;
+  return (
+    <div className={tileClasses} onClick={() => contentType && handleClick()}>
+      {children}
+    </div>
+  );
+};
 
-    return (
-      <div
-        className={tileClasses}
-        onClick={() => contentType && this.handleClick()}
-      >
-        {children}
-      </div>
-    )
-  }
-}
+SharedComponent.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired
+  }),
+  tileClasses: PropTypes.string,
+  contentType: PropTypes.string,
+  children: PropTypes.node.isRequired
+};
+
+SharedComponent.defaultProps = {
+  contentType: '',
+  tileClasses: '',
+  history: { push: () => {} }
+};
+
+export default SharedComponent;

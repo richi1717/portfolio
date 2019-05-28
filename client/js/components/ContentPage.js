@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import dispatch from '../dispatch';
 
-export default class ContentPage extends Component {
-  render() {
-    return (
-      <div
-        className="overlay-container"
-      >
-        {this.props.content}
-      </div>
-    );
-  }
-}
+const ContentPage = ({ content }) => (
+  <div className="overlay-container">{content}</div>
+);
 
-ContentPage.contextTypes = {
-  router: PropTypes.object
+ContentPage.propTypes = {
+  content: PropTypes.node.isRequired
 };
+
+export default ContentPage;

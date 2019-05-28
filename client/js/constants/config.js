@@ -1,5 +1,12 @@
 import React from 'react';
 import { triforce, openLink } from '../helpers/svgs';
+import Music from '../components/Music';
+
+export const music = {
+  content: (
+    <Music />
+  )
+};
 
 export const aboutMe = {
   content: (

@@ -131,6 +131,13 @@ export default class Arrangement extends Component {
             </SharedComponent>
             <SharedComponent
               history={this.props.history}
+              contentType="music"
+              tileClasses="container music hover-style"
+            >
+              <h1>Music</h1>
+            </SharedComponent>
+            <SharedComponent
+              history={this.props.history}
               contentType="military"
               tileClasses="container military hover-style"
             >

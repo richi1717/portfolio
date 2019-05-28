@@ -99,6 +99,17 @@ export default function Routes(props) {
           />
           <Route
             exact
+            path="/music"
+            render={routeProps => (
+              <ContentPage
+                content={config.music.content}
+                contentType="music"
+                history={routeProps.history}
+              />
+            )}
+          />
+          <Route
+            exact
             path="/military"
             render={routeProps => (
               <ContentPage
