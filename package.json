@@ -7,7 +7,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "dev": "node app.js",
+    "dev": "webpack-dev-server --config webpack.config.js",
+    "dev:app": "node app.js",
     "postinstall": "webpack -p --config webpack.cf.config.js"
   },
   "keywords": [
@@ -45,11 +46,15 @@
     "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.13.1",
-    "webpack": "^3.3.0",
     "webpack-dev-middleware": "^1.11.0",
     "webpack-hot-middleware": "^2.18.2"
   },
   "prettier": {
     "singleQuote": true
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
   }
 }

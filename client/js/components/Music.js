@@ -19,7 +19,11 @@ const Music = () => {
       original: true
     },
     { name: 'E-Intro', src: '/eIntro.mp3', original: true },
-    { name: 'The First song I ever wrote digitally', src: '/richiFirst.mp3', original: true },
+    {
+      name: 'The First song I ever wrote digitally',
+      src: '/richiFirst.mp3',
+      original: true
+    },
     { name: 'Song of Storms', src: '/songOfStorms.mp3', original: false },
     {
       name: 'Legend of Zelda - Dungeon',
@@ -53,36 +57,51 @@ const Music = () => {
   const notOriginalMusic = musicSelection.filter(music => !music.original);
 
   return (
-    <div className="music-container">
-      <div className="music-button-wrapper">
-        I wrote these:
-        {originalMusic.map(music => (
-          <button
-            className="music-btn"
-            key={music.name}
-            type="button"
-            onClick={() => {
-              setSelected(music.src);
-            }}
-          >
-            {music.name}
-          </button>
-        ))}
-        Someone else wrote originally but I liked it so I made my own version:
-        {notOriginalMusic.map(music => (
-          <button
-            className="music-btn"
-            key={music.name}
-            type="button"
-            onClick={() => {
-              setSelected(music.src);
-            }}
-          >
-            {music.name}
-          </button>
-        ))}
+    <div className="music-page-container">
+      <p>
+        I enjoy writing music in my free time, here are some of the songs I've
+        written. Keep in mind some of these are very much a work in progress.
+        The first few are ones I wrote, the second section are from video games
+        that I thought would be fun to make as well.
+      </p>
+      <div className="music-container">
+        <div className="music-button-wrapper">
+          I wrote these:
+          {originalMusic.map(music => (
+            <span className="music-btn-container" key={music.name}>
+              <button
+                className="music-btn"
+                type="button"
+                onClick={() => {
+                  setSelected(music.src);
+                }}
+              >
+                {music.name}
+              </button>
+            </span>
+          ))}
+          Someone else wrote originally but I liked it so I made my own version:
+          {notOriginalMusic.map(music => (
+            <span className="music-btn-container" key={music.name}>
+              <button
+                className="music-btn"
+                key={music.name}
+                type="button"
+                onClick={() => {
+                  setSelected(music.src);
+                }}
+              >
+                {music.name}
+              </button>
+            </span>
+          ))}
+        </div>
+        {selected ? (
+          renderSelectedAudio('/britty-incomplete.mp3')
+        ) : (
+          <div className="audio-container" />
+        )}
       </div>
-      {selected ? renderSelectedAudio('/britty-incomplete.mp3') : <div className="audio-container" />}
     </div>
   );
 };
