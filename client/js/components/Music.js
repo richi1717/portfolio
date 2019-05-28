@@ -19,6 +19,7 @@ const Music = () => {
       original: true
     },
     { name: 'E-Intro', src: '/eIntro.mp3', original: true },
+    { name: 'The First song I ever wrote digitally', src: '/richiFirst.mp3', original: true },
     { name: 'Song of Storms', src: '/songOfStorms.mp3', original: false },
     {
       name: 'Legend of Zelda - Dungeon',
