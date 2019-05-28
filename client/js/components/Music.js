@@ -55,6 +55,10 @@ const Music = () => {
 
   const originalMusic = musicSelection.filter(music => music.original);
   const notOriginalMusic = musicSelection.filter(music => !music.original);
+  const handleClick = src => () => {
+    setSelected(src);
+    window.scrollTo(0, window.innerHeight);
+  };
 
   return (
     <div className="music-page-container">
@@ -72,9 +76,7 @@ const Music = () => {
               <button
                 className="music-btn"
                 type="button"
-                onClick={() => {
-                  setSelected(music.src);
-                }}
+                onClick={handleClick(music.src)}
               >
                 {music.name}
               </button>
@@ -87,9 +89,7 @@ const Music = () => {
                 className="music-btn"
                 key={music.name}
                 type="button"
-                onClick={() => {
-                  setSelected(music.src);
-                }}
+                onClick={handleClick(music.src)}
               >
                 {music.name}
               </button>
