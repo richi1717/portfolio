@@ -96,7 +96,7 @@
 
     @media screen and (max-width: $breakpoints-tablet) {
       flex-direction: column;
-      min-height: 600px;
+      height: 80vh;
 
       .audio-container {
         flex: 1;
