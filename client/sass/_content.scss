@@ -93,5 +93,14 @@
         outline: 0;
       }
     }
+
+    @media screen and (max-width: $breakpoints-tablet) {
+      flex-direction: column;
+
+      .audio-container {
+        flex: 1;
+      }
+    }
   }
+
 }
