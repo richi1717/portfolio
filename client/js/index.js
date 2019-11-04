@@ -1,9 +1,10 @@
+import '@richi1717/easter-eggs';
 import 'babel-polyfill';
 import 'whatwg-fetch';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
+import { createStore, applyMiddleware, compose } from 'redux';
 import { initializeDispatch } from './dispatch';
 import rootReducer from './reducers/rootReducer';
 import Routes from './Routes';

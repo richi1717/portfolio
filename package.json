@@ -18,6 +18,7 @@
   "author": "Richi Jeffery",
   "license": "ISC",
   "dependencies": {
+    "@richi1717/easter-eggs": "^1.0.20",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",

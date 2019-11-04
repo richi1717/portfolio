@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@richi1717/easter-eggs@^1.0.20":
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/@richi1717/easter-eggs/-/easter-eggs-1.0.20.tgz#96f8c89722dd049a153d9f795020c377d126c707"
+  integrity sha512-IWymYsPjD0gEaZBfk62WYrXdUWsDi1BOpw8ynkRy00/PtP0fy8NEexzNzUJ4v68bkhPtzcq70Mna2uoeUpvhag==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
