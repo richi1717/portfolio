@@ -277,7 +277,7 @@ export const demo = {
         </li>
         <li>
           <a target="_blank" href="https://www.npmjs.com/package/@richi1717/easter-eggs">
-            Easter Eggs - try it out on this site! up up down down left right left right a b Return/Enter
+            Easter Eggs - try it out on this site! up up down down left right left right b a Return/Enter
             {openLink}
           </a>
         </li>
