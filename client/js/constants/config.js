@@ -3,9 +3,7 @@ import { triforce, openLink } from '../helpers/svgs';
 import Music from '../components/Music';
 
 export const music = {
-  content: (
-    <Music />
-  )
+  content: <Music />
 };
 
 export const aboutMe = {
@@ -222,8 +220,9 @@ export const skills = {
           'SCSS',
           'Node',
           'Express'
-        ].map(item => <li key={item}>{item}</li>)}
-        {' '}
+        ].map(item => (
+          <li key={item}>{item}</li>
+        ))}{' '}
       </ul>
     </div>
   )
@@ -276,10 +275,19 @@ export const demo = {
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://www.npmjs.com/package/@richi1717/easter-eggs">
-            Easter Eggs - try it out on this site! up up down down left right left right b a Return/Enter
+          <a
+            target="_blank"
+            href="https://www.npmjs.com/package/@richi1717/easter-eggs"
+          >
+            Easter Eggs - try it out on this site! Just enter the code and enjoy the animation 😉
             {openLink}
           </a>
+          <div>
+            Konami code: up up down down left right left right b a Return/Enter
+          </div>
+          <div>
+            Sonic config code: up c down c left c right c a Return/Enter
+          </div>
         </li>
       </ul>
     </div>
