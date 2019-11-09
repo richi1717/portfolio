@@ -3,9 +3,9 @@
 
 
 "@richi1717/easter-eggs@^1.0.20":
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/@richi1717/easter-eggs/-/easter-eggs-1.0.20.tgz#96f8c89722dd049a153d9f795020c377d126c707"
-  integrity sha512-IWymYsPjD0gEaZBfk62WYrXdUWsDi1BOpw8ynkRy00/PtP0fy8NEexzNzUJ4v68bkhPtzcq70Mna2uoeUpvhag==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@richi1717/easter-eggs/-/easter-eggs-1.1.0.tgz#68b5b905dfb85601dbaef5fca94fdf92166772da"
+  integrity sha512-eGLtigyxkxV0zskNpfxpN6rIiWwle8jXpFhq0z2DtbQNLX9S8Y7EhoOxY/yOcwJn0Dhqxpq6BjbgjQ/buULs2w==
 
 "@types/events@*":
   version "3.0.0"
